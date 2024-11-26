@@ -1,0 +1,13 @@
+import numpy as np
+import math
+
+v=np.matrix(([3,-2,4,6],[-1,7,2,-8],[4,-1,-6,-20]))
+
+l1=np.sum(np.abs(v),axis=0)
+max_value=np.max(l1)
+print("The l1 of matrix is : ",max_value)
+
+l2=np.sum(np.power(v,2))
+print("The l2 of matrix is: ",math.sqrt(l2))
+li=np.sum(np.abs(v),axis=1)
+print("The li of matrix is : ",np.max(li))
