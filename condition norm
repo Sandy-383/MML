@@ -1,0 +1,28 @@
+#condition norm
+
+
+import numpy as np
+import math
+m=np.matrix(([2,-1,1],[1,0,1],[3,-1,4]))
+m_i=np.linalg.inv(m)
+
+#l1 norm
+l1=np.sum(np.abs(m),axis=0)
+max_value=np.max(l1)
+l1_1=np.sum(np.abs(m_i),axis=0)
+max_value1=np.max(l1_1)
+
+#l2 norm
+l2=np.sum(np.power(m,2))
+max1=math.sqrt(l2)
+l21=np.sum(np.power(m_i,2))
+max2=math.sqrt(l21)
+
+#Li norm
+li= np.sum(np.abs(m),axis=1)
+lii=np.sum(np.abs(m_i),axis=1)
+
+
+print("Conditional norm of l1: " ,max_value*max_value1)
+print("conditional norm of l2: " ,max1*max2)
+print("Conditional norm of li: ", np.max(li)*np.max(lii))
