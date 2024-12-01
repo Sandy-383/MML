@@ -26,3 +26,9 @@ lii=np.sum(np.abs(m_i),axis=1)
 print("Conditional norm of l1: " ,max_value*max_value1)
 print("conditional norm of l2: " ,max1*max2)
 print("Conditional norm of li: ", np.max(li)*np.max(lii))
+
+
+#output
+Conditional norm of l1:  27.000000000000007
+conditional norm of l2:  18.668154702594475
+Conditional norm of li:  28.000000000000004
