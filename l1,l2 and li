@@ -11,3 +11,9 @@ l2=np.sum(np.power(v,2))
 print("The l2 of matrix is: ",math.sqrt(l2))
 li=np.sum(np.abs(v),axis=1)
 print("The li of matrix is : ",np.max(li))
+
+
+#output
+The l1 of matrix is :  34
+The l2 of matrix is:  25.219040425836983
+The li of matrix is :  31
