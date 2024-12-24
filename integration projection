@@ -1,5 +1,5 @@
 import sympy as sp
-t = sp.symbols('t'
+t = sp.symbols('t')
 f1 = 1
 f2 = t
 f3 = t**2
