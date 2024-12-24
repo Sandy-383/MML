@@ -1,0 +1,17 @@
+import numpy as np
+s=np.array(([1,2,3],[2,3,4],[3,4,6]))
+v1=s[0]
+v2=s[1]
+v3=s[2]
+u1=v1
+u2=v2-(np.dot(v2,u1)/np.dot(u1,u1))*u1
+
+u3=v3-(np.dot(v3,u2)/np.dot(u2,u2))*u2-(np.dot(v3,u1)/np.dot(u1,u1))*u1
+
+v=np.array((u1,u2,u3))
+print(f"orthogonal basis is \n{v}")
+e1=u1/np.linalg.norm(u1)
+e2=u2/np.linalg.norm(u2)
+e3=u3/np.linalg.norm(u3)
+w=np.array((e1,e2,e3))
+print(f"orthonormal basis is\n{w}")
