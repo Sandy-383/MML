@@ -2,7 +2,7 @@ import sympy as sp
 t = sp.symbols('t'
 f1 = 1
 f2 = t
-f3 = t**
+f3 = t**2
 def inner_product(f, g):
     return sp.integrate(f * g, (t, -1, 1))
 
