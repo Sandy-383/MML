@@ -7,3 +7,16 @@ print("Eigen Values: ",values)
 print("Eigen Vectors:\n ",vectors)
 for i in range(3):
     print(f"Eigen vector for values={values[i]} is {vectors[:,i]}")
+
+
+spectral norm
+
+
+from numpy import *
+A=matrix([[7,2],[-4,1]])
+[values,vectors]=linalg.eig(A@A.T)
+M=max(values)
+sn=M**0.5
+print("Spectral norm is ",sn)
+
+#output Spectral norm is  8.16227766016838
